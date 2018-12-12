@@ -1,14 +1,13 @@
 //Initially jsPDF library shoud import/embed to your source file 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
 
-//Here's the script to convert the content to PDF. 
-//Note: the source content DivID is '#displaybox'
- <script>
+<script>
     function openpdf() {
         // define new object fron jsPDF and assign it to variable
         var pdfdoc = new jsPDF('p', 'pt', 'letter');
         // source can be HTML-formatted string, or a reference
-        // to an actual DOM element from which the text will be scraped.
+        // to an actual DOM element from which the text will be scraped
+        // the source content DivID is '#displaybox'
         source = $('#displaybox')[0];
   
         // we support special element handlers. Register them with jQuery-style 
